@@ -42,6 +42,8 @@
 │   └── lgbm.pkl  # Machine Learning 
 │
 ├── 6.Code 
+│   ├───module.py
+│   ├───preprocess.py
 │   └── NH_inference.ipynb
 │
 └───7.설명자료      
