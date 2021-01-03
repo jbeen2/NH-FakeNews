@@ -3,6 +3,7 @@
 - 재현 가능한 코드들과 제출 파일들의 설명을 담고 있는 README 파일입니다.
 - 데이터, 전처리 과정, 모델 및 추론 과정, 결과 파일이 포함되어 있습니다.
 - 추론 과정은 `6.Code > NH_inference.ipynb`로 저장되어 있습니다.
+- 모든 경로 정보는 `6.Code > config.py`에 있습니다.
 
 ## 1. 파일 구조
 
@@ -11,7 +12,6 @@
 ├── submission.csv
 │
 ├── 1.Data     
-│   ├───config.py
 │   ├───news_train.csv
 │   ├───news_test.csv
 │   └── submission.csv
@@ -42,6 +42,7 @@
 │   └── lgbm.pkl  # Machine Learning 
 │
 ├── 6.Code 
+|   ├───config.py
 │   ├───module.py
 │   ├───preprocess.py
 │   └── NH_inference.ipynb
