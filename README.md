@@ -54,23 +54,25 @@
 세 가지의 모델을 통해 Inference가 진행되며, Ensemble을 통해 최종 결과값이 도출됩니다. 
 
 ### 0. Preprocessing 
-* 
+* ```news_train.csv```와 ```news_test.csv```에서 겹치는 중복 데이터셋의 경우, 진짜 뉴스와 광고성 뉴스라고 판단되어 미리 값을 고정하였습니다. 
+* HuggingFace bert는 ```BertTokenizer```, ETRI Korbert와 Machine Learning은 ```Mecab```을 사용해 Tokenizing 하였습니다. 
 
 ### 1. HuggingFace bert 
 * 한자가 많은 데이터셋의 특성을 반영하여, ```bert-base-multilingual-cased``` 모델의 가중치를 이용해 Classification을 진행하였습니다. 
 * 임의로 지정한 validation set에서의 accuracy는 0.99596, Dacon Public Score는 0.99064 입니다. 
 
 ### 2. ETRI Korbert 
-* 풍부한 단어집합이 포함된 가중치를 이용하고자, 30349개의 단어가 포함되어 있는 ```ETRI korbert``` 모델의 가중치를 이용해 Classification을 진행하였습니다. 
+* 한국어 데이터셋의 특성을 반영할 수 있고, 30349개의 큰 단어집합을 가지고 있는 ```ETRI korbert``` 모델의 가중치를 이용해 Classification을 진행하였습니다. 
 * 임의로 지정한 validation set에서의 accuracy는 0.99479, Dacon Public Score는 0.98206 입니다. 
 
 ### 3. Machine Learning  
-* 
+* 진짜 뉴스와 가짜 뉴스를 구분짓는 특성을 반영하는 Feature를 만들어, ```LightGBM Classifier```를 이용해 분류하였습니다. 
+* 특정 문자의 포함 여부, 가짜 뉴스에 특히 많은 BAD Tokens의 개수, 기사 개수 및 순서, 해당 날짜에서의 진짜뉴스 및 가짜뉴스의 비율 통계량 등의 Feature를 통해 Classification을 진행하였습니다. 
 * 임의로 지정한 validation set에서의 accuracy는 0.9867 입니다. 
 
 ### 4. Ensemble 
-* 
-* 
+* 두 개의 Bert 모델의 결과가 같으면 Bert의 결과를 따르고, 두 개의 결과가 다르면 Machine Learning의 결과를 따르는 방향으로 ```voting```을 진행하였습니다. 
+* Dacon Public Score는 0.99126(32위), Private Score는 0.98869(26위) 입니다. 
 
 
 
