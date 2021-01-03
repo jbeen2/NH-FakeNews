@@ -53,17 +53,24 @@
 
 세 가지의 모델을 통해 Inference가 진행되며, Ensemble을 통해 최종 결과값이 도출됩니다. 
 
-### 1. HuggingFace bert 
+### 0. Preprocessing 
 * 
 
+### 1. HuggingFace bert 
+* 한자가 많은 데이터셋의 특성을 반영하여, ```bert-base-multilingual-cased``` 모델의 가중치를 이용해 Classification을 진행하였습니다. 
+* 임의로 지정한 validation set에서의 accuracy는 0.99596, Dacon Public Score는 0.99064 입니다. 
 
 ### 2. ETRI Korbert 
-* 
+* 풍부한 단어집합이 포함된 가중치를 이용하고자, 30349개의 단어가 포함되어 있는 ```ETRI korbert``` 모델의 가중치를 이용해 Classification을 진행하였습니다. 
+* 임의로 지정한 validation set에서의 accuracy는 0.99479, Dacon Public Score는 0.98206 입니다. 
 
-### 3. LightGBM Classifier 
+### 3. Machine Learning  
 * 
+* 임의로 지정한 validation set에서의 accuracy는 0.9867 입니다. 
 
 ### 4. Ensemble 
 * 
+* 
+
 
 
