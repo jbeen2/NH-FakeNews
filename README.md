@@ -2,7 +2,7 @@
 
 - 재현 가능한 코드들과 제출 파일들의 설명을 담고 있는 README 파일입니다.
 - 데이터, 전처리 과정, 모델 및 추론 과정, 결과 파일이 포함되어 있습니다.
-- 추론 과정은 `6.Code > NH_inference.ipynb`로 저장되어 있습니다.
+- 추론 과정은 `6.Code > NH_inference.ipynb`로 저장되어 있으며, 해당 파일을 차례대로 실행하시면 됩니다. 
 - 모든 경로 정보는 `6.Code > config.py`에 있습니다.
 
 ## 1. 파일 구조
@@ -19,7 +19,7 @@
 ├── 2.Pos Tagger    
 ├── 3.Tokenizer
 │
-├── 4.Pre_trained embedding   # etri korbert 
+├── 4.Pre_trained embedding   # ETRI Korbert 
 │   ├───korbert-20210103T073731Z-001.zip
 │   └── korbert
 │       ├───vocab.korean_morp.list
@@ -33,7 +33,7 @@
 │   │   ├───1230_bert_1.pt
 │   │   └─── ...
 │   │
-│   ├───bert_tu   # ETRI korbert
+│   ├───bert_tu   # ETRI Korbert
 │   │   ├───pytorch_model.bin
 │   │   ├───bert_config.json
 │   │   ├───test_results_labels.txt 
@@ -70,7 +70,7 @@
 
 ### 3. Machine Learning  
 * 진짜 뉴스와 가짜 뉴스를 구분짓는 특성을 반영하는 Feature를 만들어, ```LightGBM Classifier```를 이용해 분류하였습니다. 
-* 특정 문자의 포함 여부, 가짜 뉴스에 특히 많은 BAD Tokens의 개수, 기사 개수 및 순서, 해당 날짜에서의 진짜뉴스 및 가짜뉴스의 비율 통계량 등의 Feature를 통해 Classification을 진행하였습니다. 
+* 특정 문자의 포함 여부, 가짜 뉴스에 특히 많은 BAD Tokens의 개수, 기사 개수 및 순서, 해당 날짜의 진짜뉴스 및 가짜뉴스 비율 통계량 등의 Feature를 통해 Classification을 진행하였습니다. 
 * 임의로 지정한 validation set에서의 accuracy는 0.9867 입니다. 
 
 ### 4. Ensemble 
