@@ -75,7 +75,7 @@
 
 ### 4. Ensemble 
 * 두 개의 Bert 모델의 결과가 같으면 Bert의 결과를 따르고, 두 개의 결과가 다르면 Machine Learning의 결과를 따르는 방향으로 ```voting```을 진행하였습니다. 
-* Dacon Public Score는 0.99126(32위), Private Score는 0.98869(26위) 입니다. 
+* Dacon Public Score는 0.99126(21위), Private Score는 0.98869(15위) 입니다. 
 
 
 
