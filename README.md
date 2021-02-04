@@ -1,6 +1,6 @@
 # NH투자증권 빅데이터 경진대회 
 ### [League1] 알고리즘 개발 (NLP) : [AI야, 진짜 뉴스를 찾아줘!](https://dacon.io/competitions/official/235658/overview/) 
-✔️ 분석 과정에 대해 자세하게 알고 싶으시다면, [**보고서**](https://github.com/jbeen2/NH-FakeNews/blob/main/League1_마이야르.pdf)를 참고해주세요! 
+✔️ 분석 과정에 대해 자세하게 알고 싶으시다면, [**보고서**](https://github.com/jbeen2/NH-FakeNews/blob/main/League1_%EB%A7%88%EC%9D%B4%EC%95%BC%EB%A5%B4.pdf)를 참고해주세요! 
 
 
 
@@ -99,7 +99,8 @@
 
 
 ## 3. Members : Team 마이야르 
-고기가 그을리면서 특유의 감칠맛과 독특하고 그윽한 향을 갖추게 되는 것이 마이야르 반응이라고 합니다.. ㅎㅎ 항정살로 뭉쳐진 우리 팀..🐷  
+고기가 그을리면서 특유의 감칠맛과 독특하고 그윽한 향을 갖추게 되는 것이 마이야르 반응이라고 합니다.. ㅎㅎ <br>
+(항정살로 뭉쳐진 우리 팀 ..🐷)  
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
